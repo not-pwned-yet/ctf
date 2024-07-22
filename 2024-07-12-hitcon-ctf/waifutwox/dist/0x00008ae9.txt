@@ -1,0 +1,88 @@
+         .text     ┌────< 0x00008a48      e8b54c0000     call fcn.0000d702 ; calls a subroutine, push eip into the stack (esp) ; (fcn.0000d702)
+         .text    ┌─────< 0x00008a4d      eb0a           jmp 0x8a59    ; jump
+         .text    ││╎╎╎   0x00008a4f      f30f1efa       endbr64
+         .text    ││╎╎╎   0x00008a53      4989c4         mov r12, rax  ; moves data from src to dst
+         .text    ││╎╎╎   0x00008a56      4889d3         mov rbx, rdx  ; moves data from src to dst
+         .text    ││╎╎╎   ; CODE XREF from fcn.00007d68 @ +0xce5(x)
+         .text    └─────> 0x00008a59      488d85d8fe..   lea rax, [rbp - 0x128] ; load effective address
+         .text     │╎╎╎   0x00008a60      4889c7         mov rdi, rax  ; moves data from src to dst
+         .text    ┌─────< 0x00008a63      e89a4c0000     call fcn.0000d702 ; calls a subroutine, push eip into the stack (esp) ; (fcn.0000d702)
+         .text   ┌──────< 0x00008a68      eb0a           jmp 0x8a74    ; jump
+         .text   │││╎╎╎   0x00008a6a      f30f1efa       endbr64
+         .text   │││╎╎╎   0x00008a6e      4989c4         mov r12, rax  ; moves data from src to dst
+         .text   │││╎╎╎   0x00008a71      4889d3         mov rbx, rdx  ; moves data from src to dst
+         .text   │││╎╎╎   ; CODE XREFS from fcn.00007d68 @ +0xc94(x), +0xcaf(x), +0xd00(x)
+         .text   └──────> 0x00008a74      488d85d0fe..   lea rax, [rbp - 0x130] ; load effective address
+         .text    ││╎╎╎   0x00008a7b      4889c7         mov rdi, rax  ; moves data from src to dst
+         .text   ┌──────< 0x00008a7e      e87f4c0000     call fcn.0000d702 ; calls a subroutine, push eip into the stack (esp) ; (fcn.0000d702)
+         .text  ┌───────< 0x00008a83      eb0a           jmp 0x8a8f    ; jump
+         .text  ││││╎╎╎   0x00008a85      f30f1efa       endbr64
+         .text  ││││╎╎╎   0x00008a89      4989c4         mov r12, rax  ; moves data from src to dst
+         .text  ││││╎╎╎   0x00008a8c      4889d3         mov rbx, rdx  ; moves data from src to dst
+         .text  ││││╎╎╎   ; CODE XREFS from fcn.00007d68 @ +0xc76(x), +0xd1b(x)
+         .text  └───────> 0x00008a8f      488d4580       lea rax, [rbp - 0x80] ; load effective address
+         .text   │││╎╎╎   0x00008a93      4889c7         mov rdi, rax  ; moves data from src to dst
+         .text   │││╎└──< 0x00008a96      e8b5dcffff     call sym cv::Mat::~Mat() ; sym.imp.cv::Mat::Mat__ ; calls a subroutine, push eip into the stack (esp) ; (sym.imp.cv::Mat::Mat__) ; (cv::Mat::~Mat())
+         .text   │││╎ ╎   ; CODE XREF from fcn.00007d68 @ +0xc49(x)
+         .text   │││╎ ╎   0x00008a9b      488d8500ff..   lea rax, [rbp - 0x100] ; load effective address
+         .text   │││╎ ╎   0x00008aa2      4889c7         mov rdi, rax  ; moves data from src to dst
+         .text   │││╎┌──< 0x00008aa5      e8a4c50000     call fcn.0001504e ; calls a subroutine, push eip into the stack (esp) ; (fcn.0001504e)
+         .text   │││╎│╎   ; CODE XREF from fcn.00007d68 @ +0xc2b(x)
+         .text   │││╎│╎   0x00008aaa      488d85c8fe..   lea rax, [rbp - 0x138] ; load effective address
+         .text   │││╎│╎   0x00008ab1      4889c7         mov rdi, rax  ; moves data from src to dst
+         .text   │││╎│└─< 0x00008ab4      e827dcffff     call fcn.000066e0 ; calls a subroutine, push eip into the stack (esp) ; (section..plt.got) ; (fcn.000066e0) ; ([14] -r-x section size 32 named .plt.got)
+         .text   │││╎│    0x00008ab9      4c89e0         mov rax, r12  ; moves data from src to dst
+         .text   │││╎│    0x00008abc      4889da         mov rdx, rbx  ; moves data from src to dst
+         .text   │││╎│┌─< 0x00008abf      eb04           jmp 0x8ac5    ; jump
+         .text   │││╎││   0x00008ac1      f30f1efa       endbr64
+         .text   │││╎││   ; CODE XREF from fcn.00007d68 @ +0xd57(x)
+         .text   │││╎│└─> 0x00008ac5      4883fa01       cmp rdx, 1    ; compare two operands
+         .text   │││╎│┌─< 0x00008ac9      740f           je 0x8ada     ; jump short if equal (zf=1)
+         .text   │││╎││   0x00008acb      4883fa02       cmp rdx, 2    ; compare two operands
+         .text  ┌───────< 0x00008acf      0f849e000000   je 0x8b73     ; jump short if equal (zf=1)
+         .text  ────────< 0x00008ad5      e932010000     jmp 0x8c0c    ; jump
+         .text  ││││╎││   ; CODE XREF from fcn.00007d68 @ +0xd61(x)
+         .text  ││││╎│└─> 0x00008ada      4889c7         mov rdi, rax  ; moves data from src to dst
+         .text  ││││└───< 0x00008add      e8fedeffff     call sym.imp.__cxa_begin_catch ; calls a subroutine, push eip into the stack (esp) ; (sym.imp.__cxa_begin_catch)
+         .text  ││││ │    0x00008ae2      488985f0fe..   mov qword [rbp - 0x110], rax ; moves data from src to dst
+         .text  ╎╎╎╎╎╎╎   0x00008ae9      488d05d51f..   lea rax, str.e_31minvalid_base64e_0m ; 0x2aac5 ; load effective address ; (str.e_31minvalid_base64e_0m)
+         .text  ╎╎╎╎╎╎╎   0x00008af0      4889c6         mov rsi, rax  ; moves data from src to dst
+         .text  ╎╎╎╎╎╎╎   0x00008af3      488d05c6d7..   lea rax, obj.std::cout ; 0x3862c0 ; load effective address ; (reloc.std::cout) ; (obj.std::cout) ; (std::cout)
+         .text  ╎╎╎╎╎╎╎   0x00008afa      4889c7         mov rdi, rax  ; moves data from src to dst
+         .text  ────────< 0x00008afd      e89ee1ffff     call method std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) ; method.std::basic_ostream_char__std::char_traits_char____std::operator____std.char_traits_char____std::basic_ostream_char__std::char_traits_char_____char_const_ ; calls a subroutine, push eip into the stack (esp) ; (sym.imp.std::basic_ostream_char__std::char_traits_char____std::operator____std::char_traits_char____std::basic_ostream_char__std::char_traits_char_____char_const_) ; (method.std::basic_ostream_char__std::char_traits_char____std::operator____std.char_traits_char____std::basic_ostream_char__std::char_traits_char_____char_const_) ; (std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*))
+         .text  ╎╎╎╎╎╎╎   0x00008b02      488b158fd4..   mov rdx, qword [reloc.std::basic_ostream_char__std::char_traits_char____std::endl_char__std::char_traits_char____std::basic_ostream_char__std::char_traits_char____] ; [0x385f98:8]=0 ; moves data from src to dst ; (reloc.std::basic_ostream_char__std::char_traits_char____std::endl_char__std::char_traits_char____std::basic_ostream_char__std::char_traits_char____)
+         .text  ╎╎╎╎╎╎╎   0x00008b09      4889d6         mov rsi, rdx  ; moves data from src to dst
+         .text  ╎╎╎╎╎╎╎   0x00008b0c      4889c7         mov rdi, rax  ; moves data from src to dst
+         .text  ╎╎╎╎╎└──< 0x00008b0f      e88cdeffff     call sym std::ostream::operator<<(std::ostream& (*)(std::ostream&)) ; sym.imp.std::ostream::operator___std::ostream____std::ostream__ ; calls a subroutine, push eip into the stack (esp) ; (sym.imp.std::ostream::operator___std::ostream____std::ostream__) ; (std::ostream::operator<<(std::ostream& (*)(std::ostream&)))
+         .text  ╎╎╎╎╎ ╎   0x00008b14      488d058c1f..   lea rax, str.e_31m ; 0x2aaa7 ; load effective address ; (str.e_31m)
+         .text  ╎╎╎╎╎ ╎   0x00008b1b      4889c6         mov rsi, rax  ; moves data from src to dst
+         .text  ╎╎╎╎╎ ╎   0x00008b1e      488d059bd7..   lea rax, obj.std::cout ; 0x3862c0 ; load effective address ; (reloc.std::cout) ; (obj.std::cout) ; (std::cout)
+         .text  ╎╎╎╎╎ ╎   0x00008b25      4889c7         mov rdi, rax  ; moves data from src to dst
+         .text  └───────< 0x00008b28      e873e1ffff     call method std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) ; method.std::basic_ostream_char__std::char_traits_char____std::operator____std.char_traits_char____std::basic_ostream_char__std::char_traits_char_____char_const_ ; calls a subroutine, push eip into the stack (esp) ; (sym.imp.std::basic_ostream_char__std::char_traits_char____std::operator____std::char_traits_char____std::basic_ostream_char__std::char_traits_char_____char_const_) ; (method.std::basic_ostream_char__std::char_traits_char____std::operator____std.char_traits_char____std::basic_ostream_char__std::char_traits_char_____char_const_) ; (std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*))
+         .text   ╎╎╎╎ ╎   0x00008b2d      4889c2         mov rdx, rax  ; moves data from src to dst
+         .text   ╎╎╎╎ ╎   0x00008b30      488d0549da..   lea rax, [0x00386580] ; load effective address
+         .text   ╎╎╎╎ ╎   0x00008b37      4889c6         mov rsi, rax  ; moves data from src to dst
+         .text   ╎╎╎╎ ╎   0x00008b3a      4889d7         mov rdi, rdx  ; moves data from src to dst
+         .text   ╎╎╎└───< 0x00008b3d      e87edeffff     call method std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char>, std::allocator<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ; method.std::basic_ostream_char__std::char_traits_char____std::operator____char__std::char_traits_char___std.allocator_char____std::basic_ostream_char__std::char_traits_char_____std::basic_string_char__std::char_traits_char___std::allocator_char____const ; calls a subroutine, push eip into the stack (esp) ; (sym.imp.std::basic_ostream_char__std::char_traits_char____std::operator____char__std::char_traits_char___std::allocator_char____std::basic_ostream_char__std::char_traits_char_____std::basic_string_char__std::char_traits_char___std::allocator_char____const_) ; (method.std::basic_ostream_char__std::char_traits_char____std::operator____char__std::char_traits_char___std.allocator_char____std::basic_ostream_char__std::char_traits_char_____std::basic_string_char__std::char_traits_char___std::allocator_char____const) ; (std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char>, std::allocator<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&))
+         .text   ╎╎╎  ╎   0x00008b42      4889c2         mov rdx, rax  ; moves data from src to dst
+         .text   ╎╎╎  ╎   0x00008b45      488d05611f..   lea rax, str.e_0m ; 0x2aaad ; load effective address ; (str.e_0m)
+         .text   ╎╎╎  ╎   0x00008b4c      4889c6         mov rsi, rax  ; moves data from src to dst
+         .text   ╎╎╎  ╎   0x00008b4f      4889d7         mov rdi, rdx  ; moves data from src to dst
+         .text   └──────< 0x00008b52      e849e1ffff     call method std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) ; method.std::basic_ostream_char__std::char_traits_char____std::operator____std.char_traits_char____std::basic_ostream_char__std::char_traits_char_____char_const_ ; calls a subroutine, push eip into the stack (esp) ; (sym.imp.std::basic_ostream_char__std::char_traits_char____std::operator____std::char_traits_char____std::basic_ostream_char__std::char_traits_char_____char_const_) ; (method.std::basic_ostream_char__std::char_traits_char____std::operator____std.char_traits_char____std::basic_ostream_char__std::char_traits_char_____char_const_) ; (std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*))
+         .text    ╎╎  ╎   0x00008b57      488b153ad4..   mov rdx, qword [reloc.std::basic_ostream_char__std::char_traits_char____std::endl_char__std::char_traits_char____std::basic_ostream_char__std::char_traits_char____] ; [0x385f98:8]=0 ; moves data from src to dst ; (reloc.std::basic_ostream_char__std::char_traits_char____std::endl_char__std::char_traits_char____std::basic_ostream_char__std::char_traits_char____)
+         .text    ╎╎  ╎   0x00008b5e      4889d6         mov rsi, rdx  ; moves data from src to dst
+         .text    ╎╎  ╎   0x00008b61      4889c7         mov rdi, rax  ; moves data from src to dst
+         .text    ╎╎  └─< 0x00008b64      e837deffff     call sym std::ostream::operator<<(std::ostream& (*)(std::ostream&)) ; sym.imp.std::ostream::operator___std::ostream____std::ostream__ ; calls a subroutine, push eip into the stack (esp) ; (sym.imp.std::ostream::operator___std::ostream____std::ostream__) ; (std::ostream::operator<<(std::ostream& (*)(std::ostream&)))
+         .text    ╎╎      0x00008b69      bf01000000     mov edi, 1    ; moves data from src to dst
+         .text  ────────< 0x00008b6e      e85de1ffff     call sym.imp.exit ; calls a subroutine, push eip into the stack (esp) ; void exit(int status) ; (sym.imp.exit)
+         .text    ╎╎      ; CODE XREF from fcn.00007d68 @ +0xd67(x)
+         .text    ╎╎      0x00008b73      4889c7         mov rdi, rax  ; moves data from src to dst
+         .text    ╎└────< 0x00008b76      e865deffff     call sym.imp.__cxa_begin_catch ; calls a subroutine, push eip into the stack (esp) ; (sym.imp.__cxa_begin_catch)
+         .text    ╎       0x00008b7b      488985e8fe..   mov qword [rbp - 0x118], rax ; moves data from src to dst
+         .text    ╎       0x00008b82      488d05541f..   lea rax, str.e_31minvalid_imagee_0m ; 0x2aadd ; load effective address ; (str.e_31minvalid_imagee_0m)
+         .text    ╎       0x00008b89      4889c6         mov rsi, rax  ; moves data from src to dst
+         .text    ╎       0x00008b8c      488d052dd7..   lea rax, obj.std::cout ; 0x3862c0 ; load effective address ; (reloc.std::cout) ; (obj.std::cout) ; (std::cout)
+         .text    ╎       0x00008b93      4889c7         mov rdi, rax  ; moves data from src to dst
+         .text    └─────< 0x00008b96      e805e1ffff     call method std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) ; method.std::basic_ostream_char__std::char_traits_char____std::operator____std.char_traits_char____std::basic_ostream_char__std::char_traits_char_____char_const_ ; calls a subroutine, push eip into the stack (esp) ; (sym.imp.std::basic_ostream_char__std::char_traits_char____std::operator____std::char_traits_char____std::basic_ostream_char__std::char_traits_char_____char_const_) ; (method.std::basic_ostream_char__std::char_traits_char____std::operator____std.char_traits_char____std::basic_ostream_char__std::char_traits_char_____char_const_) ; (std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*))
+         .text            0x00008b9b      488b15f6d3..   mov rdx, qword [reloc.std::basic_ostream_char__std::char_traits_char____std::endl_char__std::char_traits_char____std::basic_ostream_char__std::char_traits_char____] ; [0x385f98:8]=0 ; moves data from src to dst ; (reloc.std::basic_ostream_char__std::char_traits_char____std::endl_char__std::char_traits_char____std::basic_ostream_char__std::char_traits_char____)
+         .text            0x00008ba2      4889d6         mov rsi, rdx  ; moves data from src to dst
