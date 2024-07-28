@@ -2,6 +2,8 @@
 
 ## QR Acak
 
+Category: Forensic
+
 Download Gambar berikut
 
 ### Solving
